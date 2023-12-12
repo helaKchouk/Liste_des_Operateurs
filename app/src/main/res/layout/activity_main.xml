@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+       android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:text="Login"/>
+    <TextView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:text="saisir numero"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:maxLength="8"
+        android:inputType="number"
+        android:hint="numero"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/l2"
+        android:id="@+id/l3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:layout_marginLeft="20dp"
+
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/l4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageTextView"
+        android:layout_marginTop="31dp"
+        android:layout_centerHorizontal="true"
+        android:text="ecrire votre code de recharge"/>
+
+    <EditText
+        android:inputType="number"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/l4"
+        android:id="@+id/l5"
+        android:hint="code de recharge"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="31dp"
+        android:id="@+id/l6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l5"
+        android:layout_centerHorizontal="true"
+        android:text="recharger votre ligne" />
+    <TextView
+        android:layout_marginTop="31dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/l6"
+        android:id="@+id/l7"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+         />
+    />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/l6"
+        android:layout_toRightOf="@id/l7"
+        android:text="appeller"
+        android:id="@+id/l8"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_marginTop="31dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/l7"
+        android:id="@+id/l11"
+        android:text="pour consulter votre solde"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    />
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="31dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/l11"
+        android:id="@+id/l9"
+        android:gravity="center"
+ />
+    />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@id/l11"
+        android:layout_toRightOf="@id/l9"
+        android:text="appeller"
+        android:id="@+id/l10"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>
